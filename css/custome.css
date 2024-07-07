@@ -1,0 +1,296 @@
+@font-face { font-family: Yantramanav-Regular; src: url('../fonts/Yantramanav-Regular.ttf'); } 
+@font-face { font-family: Yantramanav-Medium; src: url('../fonts/Yantramanav-Medium.ttf'); } 
+@font-face { font-family: Yantramanav-Bold; src: url('../fonts/Yantramanav-Bold.ttf'); } 
+
+html {
+    position: relative;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Yantramanav-Regular;
+    width: 100%;
+    overflow-x: hidden;
+    padding: 0px;
+    margin: 0px;
+    background-color: #ffff;
+    min-height: 100vh;
+    height: auto;
+    position: relative;
+    padding-bottom: 41px;
+    color: #373743;
+}
+.nopadding{
+    padding: 0px !important;
+}
+.sec-pad{
+    padding: 50px 0px; 
+}
+a, a:hover{
+    color: inherit;
+}
+p{
+    font-size: 18px;
+    line-height: 27px;
+    color: #717078;
+}
+.medium{
+    font-family: Yantramanav-Medium!important;
+}
+
+
+/*header*/
+
+.header{
+    width: 100%;
+    background-color: transparent;
+    padding: 15px 0px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 999;
+    -webkit-transition: all ease .5s;
+    transition: all ease .5s;
+}
+.sticky-bar{
+    position: fixed;
+    padding: 10px 0px;
+    background-color: #F8FDFF!important;
+    box-shadow: 0px 0px 8px #41414129;
+    -webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+    animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+}
+.sticky-bar .logo{
+    height: 70px;
+    width: auto;
+}
+.navbar{
+    padding: 0px;
+}
+.navbar-light .navbar-brand {
+    align-items: center;
+    display: flex;
+    padding: 0px;
+}
+@media (min-width: 1200px){
+    .navbar-expand-xl .navbar-nav .nav-item {
+        margin-right: 45px;
+        margin-left: 45px;
+    }
+    .navbar-expand-xl .navbar-nav .nav-link {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #3F4547;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: Yantramanav-Medium;
+}
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-item.active .nav-link , .navbar-light .navbar-nav .nav-item .nav-link.active , .navbar-light .navbar-nav .nav-link:focus {
+    color: #E1034C;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+    outline: 0;
+}
+.navbar-light .navbar-toggler {
+    color: #373743;
+    border: none;
+}
+.navbar-toggler svg{
+    color: #373743;
+}
+#navbar-hamburger.show{
+    display: block;
+}
+#navbar-hamburger, #navbar-close{
+    display: none;
+}
+#navbar-close.show{
+    display: block;
+}
+.dropdown-toggle::after{
+    display: none;
+}
+.dropdown-item {
+    display: block;
+    width: 100%;
+    font-size: 17px;
+    padding: 7px 20px;
+    clear: both;
+    font-weight: 400;
+    color: #3F4547;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+.dropdown-menu {
+    background-color: #fff;
+    min-width: 12rem;
+    box-shadow: 0px 0px 10px #00000030;
+    border: none;
+    border-radius: 10px;
+    /*padding: 0px;*/
+    overflow: hidden;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #3F4547;
+    background-color: #ededed;
+}
+.dropdown-item.active, .dropdown-item:active {
+    color: #3F4547;
+    background-color: #ededed!important;
+}
+@media all and (min-width: 1200px) {
+    .navbar .dropdown-menu.fade-up{ top:180%; transition: all ease .3s; display:block; opacity: 0; visibility: hidden; }
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+        top: 100%;
+    }
+}
+
+/*footer*/
+
+.footer{
+    background-color: #161072;
+    padding: 7px 0px;
+    color: #F6F6F6;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+.footer p{
+    color: #F6F6F6;
+}
+.footer .sc-img {
+    transform: rotate(0deg);
+    transition: all ease .5s;
+}
+.footer .sc-img:hover {
+    transform: rotate(360deg);
+}
+
+/*content part*/
+
+.page-bg-img{
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.title{
+    font-size: 70px;
+    line-height: 80px;
+    font-family: Yantramanav-Bold;
+    margin-bottom: 20px;
+}
+.theme-btn{
+    background-color: #161072;
+    box-shadow: 0px 5px 10px #16107233;
+    border-radius: 5px;
+    color: #F8FDFF!important;
+    font-size: 18px;
+    padding: 9px 30px;
+    outline: 0!important;
+    position: relative;
+    overflow: hidden;
+    box-shadow: none!important;
+    outline: 0!important;
+}
+.pink-btn{
+    background-color: #E1034C;
+    box-shadow: 0px 5px 10px #E1034C33;
+}
+.theme-btn:after {
+    background: #fff;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: .2;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: 99;
+}
+.theme-btn:hover:after {
+    left: 120%;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.one-sec-min-height{
+    min-height: calc(100vh - 243px);
+    display: flex;
+    align-items: center;
+}
+.about-img{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    z-index: 1;
+    max-height: 100%;
+    width: auto;
+}
+.relative-9{
+    position: relative;
+    z-index: 9;
+}
+.ft-24{
+    font-size: 24px;
+    line-height: 34px;
+}
+.mini-title{
+    font-size: 40px;
+    line-height: 50px;
+    font-family: Yantramanav-Bold;
+    margin-bottom: 15px;
+}
+.small-title{
+    font-size: 30px;
+    line-height: 40px;
+    font-family: Yantramanav-Bold;
+    margin-bottom: 15px;
+}
+.product-margin{
+    margin-top: 40px;
+}
+.contact-box{
+    background-color: #FFF9FB;
+    border-radius: 7px;
+    padding: 50px 60px;
+}
+.form-group{
+    margin-bottom: 24px;
+}
+.form-group label{
+    font-size: 18px;
+    line-height: 25px;
+    color: #3F4547;
+    margin-bottom: 10px;
+}
+.form-control{
+    background-color: #FFFFFF;
+    border: 1px solid #DEDEDE;
+    border-radius: 3px;
+    padding: 8px 20px;
+    font-size: 18px;
+    line-height: 25px;
+    color: #3F4547;
+}
+.form-control::placeholder{
+    color: #CACDCE;
+}
+.form-control:focus{
+    box-shadow: none;
+    outline: 0;
+    border-color: #E1034C;
+}
